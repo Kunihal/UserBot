@@ -16,10 +16,12 @@ from userbot import (COUNT_PM, CMD_HELP, BOTLOG, BOTLOG_CHATID,
 from userbot.events import register
 
 # ========================= CONSTANTS ============================
-UNAPPROVED_MSG = ("`Bleep blop! This is a bot. Don't fret.`\n\n"
-                  "`My master hasn't approved you to PM.`"
-                  "`Please wait for my master to look in, he mostly approves PMs.`\n\n"
-                  "`As far as I know, he doesn't usually approve retards though.`")
+UNAPPROVED_MSG = ("`Hello`\n\n"
+                  "`Sorry I m not in a condition of helping anyone so it isn't worth messaging me.`\n"
+                  "`Instead, go to Google or` @CraBinz `and find solutions.`\n\n"
+                  "`Trust me you will discover more than what you think...\n`"
+                  "`Regards,`\n"
+                  "`Spyder`")
 # =================================================================
 
 
@@ -120,7 +122,7 @@ async def notifon(non_event):
 
 @register(outgoing=True, pattern="^.pm$")
 async def approvepm(apprvpm):
-    """ For .approve command, give someone the permissions to PM you. """
+    """ For .pm command, give someone the permissions to PM you. """
     if not apprvpm.text[0].isalpha() and apprvpm.text[0] not in ("/", "#", "@", "!"):
         try:
             from userbot.modules.sql_helper.pm_permit_sql import approve
@@ -215,7 +217,7 @@ async def unblockpm(unblock):
 
 CMD_HELP.update({
     "pmpermit": "\
-.approve\
+.pm\
 \nUsage: Approves the mentioned/replied person to PM.\
 \n\n.block\
 \nUsage: Blocks the person from PMing you.\
