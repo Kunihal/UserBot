@@ -63,8 +63,8 @@ async def permitpm(event):
 
                 if COUNT_PM[event.chat_id] > 4:
                     await event.respond(
-                        "`You were spamming my master's PM, which I don't like.`"
-                        " `I'mma Report Spam.`"
+                        "`You were spamming my peru master's PM, which I don't like.`"
+                        " `I'mma Report Spam, now GTFO.`"
                     )
 
                     try:
@@ -149,7 +149,7 @@ async def approvepm(apprvpm):
             return
 
         await apprvpm.edit(
-            f"[{name0}](tg://user?id={uid}) `approved to PM!`"
+            f"[{name0}](tg://user?id={uid}) `retarted nigga approved to PM, KEK!`"
         )
 
         if BOTLOG:
