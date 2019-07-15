@@ -184,7 +184,7 @@ FACEREACTS = [
 RUNSREACTS = [
     "`Runs to pedo Mukesh`",
     "`Runs far, far away from earth`",
-    "`Running faster than supercomputer coz I'm Spyder`",
+    "`Running faster than supercomputer coz I'm Spyderzzz Frand`",
     "`Runs to Rose`",
     "`This Group is too cancerous to deal with.`",
     "`Cya bois`",
