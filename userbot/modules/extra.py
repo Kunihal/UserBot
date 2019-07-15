@@ -32,8 +32,15 @@ async def fun(e):
 @register(outgoing=True, pattern="^Oof$")
 async def Oof(e):
     t = "Oof"
-    for j in range(15):
+    for j in range(12):
         t = t[:-1] + "of"
+        await e.edit(t)
+	
+@register(outgoing=True, pattern="^Lol$")
+async def Lol(e):
+    t = "Lol"
+    for j in range(8):
+        t = t[:-1] + "ol"
         await e.edit(t)
 
 @register(outgoing=True, pattern="^.cry$")
@@ -59,12 +66,12 @@ async def _(event):
 @register(outgoing=True, pattern="^.source$")
 async def source(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await e.edit("https://github.com/shivamkchoudhary/Userbot/")
+        await e.edit("https://github.com/Spyderzz/UserBot/")
 
 @register(outgoing=True, pattern="^.readme$")
 async def reedme(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await e.edit("https://github.com/shivamkchoudhary/UserBot/blob/master/README.md")
+        await e.edit("https://github.com/Spyderzz/UserBot/blob/master/README.md")
 
 @register(outgoing=True, pattern="^.disapprove$")
 async def disapprovepm(disapprvpm):
@@ -87,14 +94,14 @@ async def disapprovepm(disapprvpm):
             name0 = str(aname.first_name)
 
         await disapprvpm.edit(
-            f"[{name0}](tg://user?id={disapprvpm.chat_id}) `Disaproved to PM!`"
+            f"[{name0}](tg://user?id={disapprvpm.chat_id}) `Disapproved to PM my busy & Peru Master kek!`"
             )
 
         if BOTLOG:
             await bot.send_message(
                 BOTLOG_CHATID,
                 f"[{name0}](tg://user?id={disapprvpm.chat_id})"
-                " was disapproved to PM you.",
+                " was disapproved to PM my busy & Peru Master kek!",
             )
 
 @register(outgoing=True, pattern="^.clock$")
