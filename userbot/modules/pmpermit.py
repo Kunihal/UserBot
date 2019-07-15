@@ -165,7 +165,7 @@ async def blockpm(block):
     """ For .block command, block people from PMing you! """
     if not block.text[0].isalpha() and block.text[0] not in ("/", "#", "@", "!"):
 
-        await block.edit("`You are gonna be blocked from PM-ing my Master!`")
+        await block.edit("`This chuu nubfuk has been blocked for PM-ing you Sar!`")
 
         if block.reply_to_msg_id:
             reply = await block.get_reply_message()
