@@ -17,9 +17,7 @@ from userbot.events import register
 
 # ========================= CONSTANTS ============================
 UNAPPROVED_MSG = ("`Hello`\n\n"
-                  "`Sorry I m not in a condition of helping anyone so it isn't worth messaging me.`\n"
-                  "`Instead, go to Google or` @CraBinz `and find solutions.`\n\n"
-                  "`Trust me you will discover more than what you think...\n`"
+                  "`Sorry I'm not in a condition of helping anyone so it isn't worth messaging me.`\n"
                   "`Regards,`\n"
                   "`Akshey`")
 # =================================================================
